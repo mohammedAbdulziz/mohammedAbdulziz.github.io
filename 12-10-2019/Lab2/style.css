@@ -1,0 +1,473 @@
+:root{
+    --clr:rgb(81, 204, 81);
+    --clr2:rgb(44, 43, 43);
+    --clr3:rgb(3, 182, 3);
+    --clr4:rgba(34, 192, 34, 0.9);
+}
+*{
+    margin:0;
+    padding:0;
+    /*overflow: hidden;*/
+    box-sizing: border-box;
+}
+body, html{
+    width:100%;
+    background-color: rgba(228, 227, 227, 0.3);
+}
+header{
+    width:100%;
+    display: block;
+    position: relative;
+}
+header nav{
+    background-color: var(--clr2);
+    width:100%;
+    display: block;
+    padding:0.7rem;
+}
+header nav .navbar{
+    color:white;
+    display: flex;
+    width:80%;
+    margin:auto;
+    flex-direction: row;
+}
+header nav .navbar .icon {
+    flex:30%;
+    font-family: 'Zhi Mang Xing', cursive;
+    font-size: 3rem;
+    letter-spacing: 2.5px;
+}
+header nav .navbar .icon p span{
+    color:var(--clr);
+}
+header nav .navbar ul {
+   flex:70%;
+   text-decoration: none;
+   list-style: none;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+}
+header nav .navbar ul li{
+    display: inline-block;
+}
+header nav .navbar ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 1.3rem;
+
+}
+header nav .navbar ul li a:hover{
+    color:var(--clr);
+}
+header .hero {
+    text-align: center;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:9rem 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(./Images/hero.jpg);
+    background-size: cover;
+
+}
+header .hero div{ width: 80%;
+    margin: auto;}
+
+header .hero div  img{
+    width:80px;
+    height: 80px;
+    border-radius: 50%;
+    display: inline-block;
+}
+header .hero div span{
+    display:inline-block;
+    font-size: xx-large;
+    height: 60px;
+    margin:auto auto;
+    text-align: center;
+}
+header .hero div span::after{
+    content: ".";
+    display:block;
+    clear:both;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+}
+header .hero div h1{
+    font-size: 4.5rem;
+    display: inline-block;
+}
+header .hero div span:nth-of-type(2){
+    color:var(--clr);
+    font-size: 4.5rem;
+    display:inline-block;
+    text-align: center;
+    height: 5rem;
+}
+header .hero div p{
+    font-size: 1.3rem;
+    margin:1.2rem 0;
+}
+header .hero div button{
+    background-color: var(--clr);
+    border:0 solid black;
+    border-radius: 5px;
+    font-size:1.3rem;
+    color:white;
+    padding:15px 60px;
+}
+header .hero div button:hover{
+    background-color: var(--clr3);
+    
+}
+/*Bmenu********************************************************/
+header nav #Bmenu{
+    width:40px;
+    height: 40px;
+    position: absolute;
+    top:1rem;
+    right:2rem;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+}
+
+header nav .Bmenu{
+    width:40px;
+    height: 40px;
+    position: absolute;
+    top:1rem;
+    right:2rem;
+    color:white;
+    text-align: center;
+    padding-top:5px;
+    font-size: 1.4rem;
+    visibility: hidden;
+
+}
+
+/* *************************main******************************/
+/***************************section-side**********************/
+.side{
+    background-image: linear-gradient(var(--clr4),var(--clr4)),url(./Images/side.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:white;
+}
+.side .wrapper{
+    width:80%;
+    margin:auto;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.side .wrapper .container{
+    flex:33.3%;
+    text-align: center;
+    padding:1rem;
+}
+.side .wrapper .container h3{
+    font-size: 1.4rem;
+    margin-bottom:0.8rem;
+}
+.side .wrapper .container p{
+    font-size: 1rem;
+    margin-bottom:0.8rem;
+    line-height:1.5rem;
+}
+.side .wrapper .container i{
+    font-size: 4rem;
+    margin-bottom:0.8rem;
+    margin-top: 1.2rem;
+}
+/* **********************love*************************/
+.love {
+    width:80%;
+    margin: auto;
+}
+.love h2{
+    padding-top:4rem;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: lighter;
+}
+.love h2 span{
+    padding-top:4rem;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+.love p{
+    text-align: center;
+}
+.love .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding:3rem;
+}
+.love .wrapper .side-image{
+    flex:45%;
+    order:2;
+}
+.love .wrapper .side-image img{
+    width:70%;
+    margin:1rem;
+    
+}
+.love .wrapper .container{
+    flex:55%;
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+.love .wrapper .container .container1{
+    text-align: left;
+}
+.love .wrapper .container .container1 p{
+    text-align: left;
+    margin:0.5rem 0;
+}
+.love .wrapper .container .container1 h4{
+    font-size: 1.2rem;
+}
+/* **************************the main area*********************/
+.main-sec{
+    background-color: #fff;
+    margin:auto;
+}
+.main-sec #main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    margin:auto;
+}
+.main-sec #main .main{
+    flex:65%;
+}
+.main-sec #main .aside{
+    flex:35%;
+}
+.main-sec #main .aside h3 {
+    font-weight: lighter;
+    font-size: 1.7rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+.main-sec #main .aside h3 span{
+    font-weight: bold;
+}
+.main-sec #main .aside .aside-cont img{
+    width:80px;
+    height: 80px;
+    border-radius: 50%;
+    float: right;
+}
+.main-sec #main .aside .aside-cont{
+    background-color: var(--clr);
+    padding: 1rem;
+    margin-left: 1rem;
+}
+.main-sec #main .main-area{
+    border-bottom:2px solid rgba(0, 0, 0, 0.164);
+}
+.main-sec #main .main-area h2{
+    margin:1.4rem 0;
+    font-size: 3rem;
+}
+.main-sec #main .main-area p:first-of-type{
+    font-size: 1.1rem;
+    margin-bottom:1.2rem;
+}
+.main-sec #main .main-area p:last-of-type{
+    margin-bottom: 1.2rem;
+}
+.main-sec #main .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.main-sec #main .wrapper .container2{
+    flex:33.3%;
+}
+.main-sec #main .wrapper .container2 h4{
+    margin:1.2rem 0 0.5rem 0;
+}
+.main-sec #main .wrapper .container2 i{
+    color:var(--clr);
+    font-size: 1.8rem;
+    float: left;
+    margin:0 10px 0 0 ;
+}
+.main-sec #main .wrapper .container2 p{
+    padding-bottom:1rem;
+    margin-bottom: 5rem;
+    border-bottom:2px solid rgba(0, 0, 0, 0.164);
+}
+/*teem*************************************************/
+.meet {
+    
+    text-align: center;
+}
+.meet h2{
+    font-size: 2.5rem;
+    font-weight: lighter;
+    width: 80%;
+    margin:auto;
+    margin-top:2rem;
+}
+.meet h2 span{
+    font-weight: bold;
+}
+.meet p{
+    margin-bottom: 3rem;
+    width: 80%;
+    margin: auto;
+    margin-bottom:4rem;
+}
+.meet .team-cont{
+    background-color:var(--clr2);
+    display: flex;
+    flex-direction: row;
+    padding:3rem 0 3rem 0;
+}
+.meet .team-cont img{
+    flex: 12.5%;
+    height: auto;
+    width:12.5%;
+}
+/* *******************forms***************************/
+.forms{
+    background-color: var(--clr);
+    color:white;
+}
+.forms .forms-cont{
+    width: 80%;
+    margin:auto;
+}
+.forms .forms-cont .form-cont{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.forms .forms-cont .form-cont div{
+    flex:50%;
+    margin-top:2rem;
+    margin-bottom: 2rem;
+}
+.forms .forms-cont .form-cont div:last-of-type{
+    text-align: end;
+    align-self: center;
+    font-size: 2rem;
+    word-spacing:1rem;
+}
+.forms .forms-cont .form-cont div:First-of-type h5{
+    font-size: 1.25rem;
+    font-weight: lighter;
+}
+.forms .forms-cont .form-cont div:First-of-type h5 span{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.forms .forms-cont .wrapper{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-top: 2rem;
+    border-top: 1px solid white;
+    padding-bottom: 4rem;
+
+}
+.forms .forms-cont .wrapper form{
+    flex:50%;
+}
+.forms .forms-cont .wrapper div{
+    flex:50%;
+    font-size: 1.1rem;
+}
+
+.forms .forms-cont .wrapper div img{
+    width: 100%;
+    height: auto;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid white;
+    margin-bottom: 1rem;
+}
+.forms .forms-cont .wrapper div h5:last-of-type{
+    margin-top:1.3rem;
+}
+.forms .forms-cont .wrapper div p:last-of-type{
+   color:black;
+}
+.forms .forms-cont .wrapper form input{
+    width:90%;
+    height: 1.7rem;
+    margin:0.6rem 0;
+    border-radius: 5px;
+    border: 0.5px solid rgba(0, 0, 0, 0.349);
+}
+.forms .forms-cont .wrapper form textarea{
+    margin-top:0.6rem;
+    border-radius: 5px;
+    border: 0.5px solid rgba(0, 0, 0, 0.349);
+    width:90%;
+
+}
+.forms .forms-cont .wrapper form [type="submit"]{
+    width:30%
+}
+.forms .forms-cont .wrapper form [type="submit"]:hover{
+    background-color: grey;
+}
+/* *******************************foter *************/
+footer{
+    background-color:var(--clr2);
+    color:white;
+    text-align: center;
+    padding:4rem 0;
+    line-height: 1.4rem;
+    position: relative;
+}
+footer span{
+    color:var(--clr);
+}
+footer  a{
+    text-decoration: none;
+    color:var(--clr);
+    position: absolute;
+    top: 60%;
+    right: 10%;
+}
+@media (max-width:1000px){
+    header nav #Bmenu{
+      visibility:visible;
+      opacity: 0;
+    
+    }
+    header nav #Bmenu:hover{
+        cursor: pointer;
+    }
+    header nav .Bmenu{
+        
+        visibility:visible;
+    }
+    header nav .navbar ul {
+        visibility: hidden;
+     }
+     header nav .navbar #Bmenu:checked ~ ul {
+        flex:70%;
+        text-decoration: none;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        visibility: visible;
+     }
+     header nav .navbar ul li{
+         margin:0.3rem;
+     }
+}
