@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>
+            User Posts
+        </h1>
+    </header>
+    <main>
+        <!-- get posts /////////////////////////////////// -->
+        <section id="get-posts">
+            <div class="wrapper">
+                <button id="reffreshBtn" title="Refresh">
+                    <i class="fas fa-sync"></i>
+                </button>
+                <div class="tableHeader">
+                    <h3>Posts</h3>
+                </div>
+                <div class="tableContainer">
+                    <table>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+                <button id="addBtn" title="Add Post">
+                    <i class="fas fa-plus"></i>
+                </button>
+                <button id="editBtn" title="Edit Post">
+                    <i class="far fa-edit"></i>
+                </button>
+            </div>
+        </section>
+        <!-- Add Posts -->
+        <section id="add-posts">
+            <div class="container">
+                <input type="text" id="userId" placeholder="User Id">
+                <input type="text" id="title" placeholder="Post Title">
+                <textarea name="body" id="body" placeholder="Message"></textarea>
+                <button>
+                    Add New Post
+                </button>
+                <p></p>
+            </div>
+        </section>
+        <!-- Edit posts -->
+        <section id="edit-posts">
+            <div class="container">
+                <input type="text" id="id" placeholder="Post Id">
+                <input type="text" id="userId" placeholder="User Id">
+                <input type="text" id="title" placeholder="Post Title">
+                <textarea name="body" id="body" placeholder="Message"></textarea>
+                <button>
+                    Done
+                </button>
+                <p></p>
+            </div>
+        </section>
+        
+    </main>
+    
+    
+    
+    
+    
+    
+    
+    <script src="./JS/scripts.js"></script>
+    <script src="https://kit.fontawesome.com/8fd653cab1.js" crossorigin="anonymous"></script>
+</body>
+</html>

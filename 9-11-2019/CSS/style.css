@@ -1,0 +1,158 @@
+:root{
+    --bc:#f9f9aa;
+    --brc:#444;
+    --tablePost:#178ebb;
+    --tableBody:#62d4ff;
+    --btn:#f9f9aa;
+    --btnHov:#555;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nanum Gothic', sans-serif;
+    overflow: auto;
+}
+body{
+    background: rgb(2,0,36);
+background: linear-gradient(344deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+header h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: lighter;
+    background-color:var(--bc);
+    width:50%;
+    margin:auto;
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    border:1px solid var(--brc);
+    
+}
+main{
+    width: 80%;
+    margin:auto;
+    padding-bottom: 50px;
+}
+/* Get Posts section /////////////////////////////////////*/
+.wrapper{
+    background-color: var(--bc);
+    border-radius: 10px;
+    border:1px solid var(--brc);
+    margin-top: 40px;
+    position: relative;
+}
+table, tbody, td{
+    border:1px solid var(--brc);
+    border-radius: 10px;
+    border-spacing: 10px 10px;
+}
+table{
+    border:none;
+    display: block;
+    margin:auto;
+    border-radius: 10px;
+    margin:10px;
+}
+tr td:first-of-type{
+    width:25%;
+    padding: 10px;
+    background-color: var(--tablePost);
+}
+tr td p span{
+    font-weight: bold;
+}
+tr td:last-of-type{
+    padding:10px;
+    text-align: center ;
+    background-color: var(--tableBody);
+}
+tr td:last-of-type h3{
+    text-align: center;
+    margin: 10px;
+}
+#reffreshBtn{
+    margin-left: 40px;
+    margin-top: 10px;
+    border-radius: 50%;
+    padding:5px;
+    border:1px solid transparent;
+    background-color: var(--btn);
+    font-size: 1.1em;
+    font-weight: lighter;
+    margin-bottom: 5px;
+}
+#reffreshBtn:hover{
+    background-color: var(--btnHov);
+    color:white;
+}
+.wrapper .tableHeader{
+    text-align: center;
+    margin-left: 50px;
+    display: inline-block;
+    width:70%;
+}
+.tableContainer{
+    max-height: 600px;
+    border-bottom: 1px solid var(--brc);
+    border-top: 1px solid var(--brc);
+}
+#addBtn,#editBtn{
+    margin:10px 0px 10px 40px;
+    border-radius:50%;
+    font-size: 1.1em;
+    padding:5px;
+    border:none;
+    height: 2em;
+    width:2em;
+    text-align: center;
+    background-color: var(--btn);
+}
+#addBtn:hover,#editBtn:hover{
+    background-color: var(--btnHov);
+    color:white;
+}
+/* Add post Section //////////& Edit Sections////////////////////*/
+.container{
+    background-color: var(--bc);
+    border:1px solid var(--brc);
+    border-radius: 10px;
+    padding: 10px;
+    margin:10px 0;
+}
+.container input{
+    font-size: 0.9em;
+    border:1px solid var(--brc);
+    padding: 3px;
+    border-radius: 5px;
+    margin:0 10px 10px 0;
+}
+.container textarea{
+    display: block;
+    font-size: 0.9em;
+    border:1px solid var(--brc);
+    padding: 3px;
+    border-radius: 5px;
+    margin:0 10px 10px 0;
+    max-width: 60%;
+    min-width: 60%;
+}
+.container button{
+    padding: 9px;
+    border-radius: 5px;
+    border:none;
+    font-size: 1em;
+    background-color: var(--btn);
+}
+.container button:hover{
+    background-color: var(--btnHov);
+    color:white;
+}
+.container{
+    margin-bottom: 50px;
+}
+.container p{
+    margin-left: 10px;
+    margin-top: 10px;
+}
