@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 273 261">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f7931e;
+      }
+
+      .cls-2 {
+        fill: #333;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+      #g [class*="cls"]{
+        animation: co 4s linear infinite alternate;
+      }
+      @keyframes co{
+        0%{
+          fill: orangered;
+        }
+        50%{
+          fill: rgb(0, 141, 235);
+        }
+        100%{
+          fill: yellow;
+        }
+      }
+    </style>
+  </defs>
+  <title>Web Dev</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Services">
+      <g id="Text">
+        <g>
+          <rect class="cls-1" width="273" height="261"/>
+          <rect class="cls-2" x="85.3" y="182.2" width="102.4" height="55.23"/>
+          <polygon points="85.3 188.1 146.2 188.1 85.3 217.6 85.3 188.1"/>
+          <path class="cls-3" d="M201.3,248.7H71.7V231.2H201.3Z"/>
+          <rect class="cls-3" x="12.3" y="16" width="248.5" height="172.14"/>
+          <rect class="cls-2" x="19.8" y="23.5" width="233.5" height="157.07"/>
+          <g id="g">
+            <path class="cls-1" d="M63.8,100.1l49-22.8v8.9L73.9,103.5v.2l38.9,17.4v8.8l-49-22.7Z"/>
+            <path class="cls-1" d="M119.9,133.8l25.2-71.6H154l-25.2,71.6Z"/>
+            <path class="cls-1" d="M209.2,107.4l-49,22.5v-8.8l39.5-17.4v-.2L160.2,86.1V77.3l49,22.6Z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

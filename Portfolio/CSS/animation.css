@@ -1,0 +1,130 @@
+:root{
+    --bc:#000;
+    --fontColor:#f7931e;
+}
+/*///////////////////////////////////////////////////////////////////*/
+/*Hero*/
+    /*weclome**************************/
+#hero .wrapper .welcoming .hi{
+    animation: hi 4s linear;
+    animation-fill-mode: forwards;
+}
+ #hero .wrapper .welcoming .name{
+    animation: name 14.6s linear;
+    animation-fill-mode: forwards;
+} 
+ #hero .wrapper .welcoming .name h2{
+    animation: hi 4s linear;
+    animation-fill-mode: forwards;
+} 
+@keyframes hi{
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity:0.6
+    }
+    50%{
+        opacity:0.6;
+    }
+    75%{
+        opacity: 0.6;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes name{
+    0%{
+        opacity: 0;
+    }
+    15%{
+        opacity:0.6
+    }
+    50%{
+        opacity:0.6;
+    }
+    85%{
+        opacity: 0.6;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+    /*final**************************/
+#hero .wrapper .final{
+    animation: final 4s linear;
+    animation-fill-mode: forwards;
+}
+@keyframes final{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+#hero .wrapper .final .nav h3{
+    border-bottom:2px solid;
+    animation: gradient 2s ease-out infinite alternate;
+
+}
+#hero .wrapper .final .nav h3 a:hover{
+animation: aHover 2s linear infinite alternate;
+}
+@keyframes aHover{
+    0%{
+        color:var(--fontColor)
+    }
+    100%{
+        color:rgba(255, 255, 255,0.1)
+    }
+}
+@keyframes gradient{
+    0%{
+        border-color: rgba(255,255,255,0.6);
+
+    }
+    100%{
+        border-color: var(--fontColor);
+
+    }
+}
+#hero .wrapper .final .nav svg{
+    transition: transform 1s linear;
+}
+#hero .wrapper .final .nav h3 {
+    transition: width 1s linear;
+}
+#hero .wrapper .final .logo embed{
+    transition: left 1s linear;
+}
+#hero .wrapper .final .nav svg .cls-1 {
+    transition: stroke 1s linear;
+  }
+
+  #hero .wrapper .final .nav svg .cls-2 {
+    transition: stroke 1s linear;
+  }
+@media screen and (max-width:900px){
+    #hero .wrapper .final .logo embed{
+        animation: opacity 2s linear;
+    }
+    @keyframes opacity {
+        0%{
+            opacity: 0;
+
+        }
+        50%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+}
+/*//////////////////////////////////////////////////////////////////*/
+/*resume*/
+#resume .wrapper .container .contt div div{
+    transition: width 4s linear;
+}
