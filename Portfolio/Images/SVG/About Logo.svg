@@ -33,12 +33,15 @@
 #third [class*="cls"], #fourth [class*="cls"]{
   animation: second 4s linear alternate infinite;
 }
+text{
+ animation: first 4s linear alternate infinite;
+}
 @keyframes first{
   0%{
-    stroke: green;
+    stroke: white;
   }
   50%{
-    stroke:red;
+    stroke:orangered;
   }
   100%{
     stroke:#f7931e;
@@ -46,10 +49,10 @@
 }
 @keyframes second{
   0%{
-    stroke: green;
+    stroke: white;
   }
   50%{
-    stroke:blue;
+    stroke:orangered;
   }
   100%{
     stroke:#f7931e;
