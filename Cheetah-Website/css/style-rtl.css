@@ -4701,14 +4701,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 @media only screen and (max-width:480px) {
 .navbar-toggle { 	margin-left:10px;}	
 }
-.is-fixed .navbar-toggle { 	margin-top:14px;	margin-bottom:14px;
-transform:translatex(-150px)}
+header .container{
+	position: relative;
+}
+.is-fixed .navbar-toggle {
+	margin-top:14px;	
+	margin-bottom:14px;
+	position: absolute;
+	left:5%;
+}
 .header-nav {	position:relative;	padding:0px; z-index:10;}
 .header-nav .nav {float: left;}
 .header-nav .nav i {font-size:9px; 	margin-left:3px;	margin-top:-3px;	vertical-align:middle;	opacity:0.7;}
 .header-nav .nav > li { font-weight:500; position:relative; text-transform:uppercase; margin:-10px 0; padding:10px 0;}
-.header-nav .nav > li > a { border-radius: 0; -webkit-border-radius:0; -moz-border-radius:0; color: #000; font-size: 14px; padding:35px 12px; cursor:pointer; letter-spacing:2px; margin:-10px 0; font-family: 'Fjalla One', sans-serif;}
-.header-nav .nav > li > a:hover {background-color: transparent;	color: #212427;}
+.header-nav .nav > li > a { border-radius: 0; -webkit-border-radius:0; -moz-border-radius:0; color: #000; font-size: 16px;
+	font-weight: bold;	color:#333 !important;
+	padding:35px 12px; cursor:pointer; letter-spacing:0.5px; margin:-10px 0; font-family: 'Fjalla One', sans-serif;}
+.header-nav .nav > li > a:hover {background-color: transparent;	color: #495e74;}
 
 .header-nav .nav > li > a:active,
 .header-nav .nav > li > a:focus {	background-color: transparent;}
@@ -5621,7 +5630,7 @@ line-height:normal;}
     color: #999;
 }
 
-.footer-bottom {padding:100px 0px; 	color:#787878; 	font-size:13px;}
+.footer-bottom {padding:20px; 	color:#787878; 	font-size:13px;}
 .footer-bottom .copyrights-text { color: #fff; font-size: 14px; text-transform: uppercase;}
 .footer-bottom .copyrights-nav { 	list-style:none;	display:inline-block;}
 .footer-bottom .copyrights-nav li { 	display:inline-block;	margin-left:8px;	margin-right:8px;}
@@ -9763,15 +9772,24 @@ STEP NUMBER
 
 #aden{
 	height:250px !important;
-
+	width:400px !important;
+	position: relative;
+	left:50%;
+	transform: translateX(-50%);
 }
 #waddeah{
 	height:250px !important;
-
+	width:400px !important;
+	position: relative;
+	left:50%;
+	transform: translateX(-50%);
 }
 #yemen{
 	height:250px !important;
-
+	width:400px !important;
+	position: relative;
+	left:50%;
+	transform: translateX(-50%);
 }
 
  .col-md-4 {
@@ -9791,4 +9809,11 @@ input::placeholder,input,textarea::placeholder,select, option {
 	font-weight: 600;
 	text-transform: uppercase;
 	opacity: 1; 
+}
+.spanStyle{
+	font-size:20px !important;
+}
+.icon-md{
+	position:relative;
+	right:50%;
 }

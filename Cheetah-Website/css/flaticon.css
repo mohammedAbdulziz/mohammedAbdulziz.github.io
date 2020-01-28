@@ -1,0 +1,31 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 28/01/2020 15:19
+  	*/
+
+@font-face {
+  font-family: "zlaticon";
+  src: url("./Fonts/Flaticon.eot");
+  src: url("./Fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Fonts/Flaticon.woff2") format("woff2"),
+       url("./Fonts/Flaticon.woff") format("woff"),
+       url("./Fonts/Flaticon.ttf") format("truetype"),
+       url("./Fonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "zlaticon";
+    src: url("./Fonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+#flaticon-contract:before, #flaticon-contract:before,
+#flaticon-contract:after, #flaticon-contract:after {   
+  font-family: zlaticon;
+
+font-style: normal}
+
+#flaticon-contract:before { content: "\f100"; }
